@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    background-color: #202020;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    height: 56px;
+    background-color: #202020f5;
+    width: 100%;
+    position: fixed;
+}
+
+nav .container {
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+
+nav .container .left-nav {
+    display: flex;
+    align-items: center;
+    width: 185px;
+}
+
+nav .container .hamburger-menu {
+    padding: 8px;
+    margin-right: 16px;
+    height: 16px;
+    width: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav .container .hamburger-menu div {
+    width: 18px;
+    height: 2px;
+    background-color: white;
+}
+
+nav .container .logo img {
+    width: 80px;
+}
+
+nav .container .logo sup {
+    position: relative;
+    top: -5px;
+    color: #aaaaaa;
+    font-size: 11px;
+}
+
+nav .container .search-bar {
+    height: 32px;
+    width: 728px;
+    display: flex;
+    justify-content: center;
+}
+
+nav .container .search-bar input{
+    box-sizing: border-box;
+    height: 32px;
+    width: 562px;
+    outline: none;
+    padding: 2px 6px;
+    color: white;
+    background-color: black;
+    border: 1px solid rgb(48 48 48);
+}
+
+nav .container .search-bar input:focus{
+    border: 1px solid rgb(11 134 239);
+}
+
+nav .container .search-bar .search-icon {
+    width: 65px;
+    height: 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #323232;
+}
+
+nav .container .search-bar .search-icon img {
+    height: 40%;
+    width: 20%;
+}
+
+nav .container .right-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+nav .container .right-nav * {
+    padding: 8px 12px;
+    width: 24px;
+    height: 24px;
+}
+
+
+nav .container .right-nav svg {
+    fill: white;
+}
+
+nav .container .right-nav img {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    padding: 1px 6px;   
+}
+
+nav.side-fixed {
+    position: fixed;
+    top: 56px;
+    bottom: 0;
+    width: 68px;
+    height: 100vh;
+}
+
+
+nav.side-fixed div {
+    padding: 16px 0 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+nav.side-fixed div:hover {
+    background-color: rgb(56 56 56);
+}
+
+nav.side-fixed div svg {
+    fill: #909090;
+    height: 21px;
+    width: 21px;
+    margin-bottom: 6px;
+}
+
+nav.side-fixed div svg.home {
+    fill: white;
+}
+
+main {
+    position: relative;
+    box-sizing: border-box;
+    top: 56px;
+    left: 68px;
+    background-color: #181818;
+    width: calc(100vw - 68px);
+    z-index: -1;
+}
+
+.main-container {
+    display: grid;
+    margin-left: 15px;
+    padding-top: 24px;
+    width: calc(100vw - 110px);
+    grid-template-columns: auto auto auto auto;
+    column-gap: 16px;
+}
+
+main .video {
+    width: auto;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+main .video .thumbnail {
+    height: 148px;
+    width: 255px;
+    position: relative;
+}
+
+main .video .thumbnail img {
+    height: auto;
+    max-width: 100%;
+    height:100%;
+}
+
+main .video .thumbnail span {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    line-height: 10px;
+    font-size: 12px;
+    background-color: #000000b1;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+
+main .video .video-info {
+    display: flex;
+}
+
+
+main .video .video-info img {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    margin: 12px 12px 0 0;
+}
+
+main .video .video-info .meta {
+    padding-right: 24px;
+    flex: 1 0 0;
+}
+
+main .video .video-info .meta h3 {
+    margin: 12px 0 6px 0;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+
+main .video .video-info .meta p {
+    margin: 0;
+    font-size: 12px;
+    color: #aaa8a5;
+}
