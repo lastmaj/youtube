@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    background-color: #202020;
+    color: white;
+    font-family: Roboto, Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    height: 56px;
+    background-color: #202020f5;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+nav .container {
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+
+nav .container .left-nav {
+    display: flex;
+    align-items: center;
+    width: 185px;
+}
+
+nav .container .hamburger-menu {
+    padding: 8px;
+    margin-right: 16px;
+    height: 16px;
+    width: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .container .hamburger-menu div {
+    width: 18px;
+    height: 2px;
+    background-color: white;
+}
+
+nav .container .logo img {
+    width: 80px;
+}
+
+nav .container .logo sup {
+    position: relative;
+    top: -5px;
+    color: #aaaaaa;
+    font-size: 11px;
+}
+
+nav .container .search-bar {
+    height: 32px;
+    width: 728px;
+    display: flex;
+    justify-content: center;
+}
+
+nav .container .search-bar input{
+    box-sizing: border-box;
+    height: 32px;
+    width: 562px;
+    outline: none;
+    padding: 2px 6px;
+    color: white;
+    background-color: black;
+    border: 1px solid rgb(48 48 48);
+}
+
+nav .container .search-bar input:focus{
+    border: 1px solid rgb(11 134 239);
+}
+
+nav .container .search-bar .search-icon {
+    width: 65px;
+    height: 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #323232;
+}
+
+nav .container .search-bar .search-icon img {
+    height: 40%;
+    width: 20%;
+}
+
+nav .container .right-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+nav .container .right-nav * {
+    padding: 8px 12px;
+    width: 24px;
+    height: 24px;
+}
+
+
+nav .container .right-nav svg {
+    fill: white;
+}
+
+nav .container .right-nav img {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    padding: 1px 6px;   
+}
+
+main .container {
+    position: relative;
+    top: 56px;
+    padding-left: 58px;
+}
+
+.container .left-column {
+    padding: 24px 24px 0 0;
+    width: 748px;
+}
+
+.container .meta-and-interactions {
+    padding: 20px 0 8px 0;
+}
+
+.container .meta-and-interactions .footer {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.container .meta-and-interactions h1 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.container .meta-and-interactions .buttons {
+    width: 380px;
+    display: flex;
+    justify-content: space-evenly;
+}
