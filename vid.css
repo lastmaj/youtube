@@ -135,6 +135,7 @@ main .container {
 .container .left-column {
     padding: 24px 24px 0 0;
     width: 748px;
+    display: inline-block;
 }
 
 .container .meta-and-interactions {
@@ -253,7 +254,7 @@ main .container {
 }
 
 .container section.comments .header {
-    margin: 24px 0 32px 0;
+    margin: 24px 0;
     display: flex;
     align-items: center;
 }
@@ -297,4 +298,138 @@ main .container {
     height: 24.5px;
     color: white;
     font-size: 14px;
+    margin-bottom: 39px;
 }
+
+.container section.comments .comment {
+    margin-bottom: 16px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.container section.comments .comment img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 16px;
+}
+
+.container section.comments .comment .core{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container section.comments .comment .core h6{
+    font-size: 13px;
+    height: 24px;
+}
+
+.container section.comments .comment .core h6 span{
+    color: #aaa5a1;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+.container section.comments .comment .core p{
+    font-size: 14px;
+    line-height: 145%;
+}
+
+
+.container section.comments .comment .core>*{
+    margin: 0
+}
+
+
+.container section.comments .comment .core .buttons {
+    display: flex;
+    height: 32px;
+    align-items: center;
+    color:#aaa5a1;
+    margin-top: 6px;
+}
+
+.container section.comments .comment .core .buttons>* {
+    fill: #aaa5a1;
+    width: 16px;
+    height: 16px;
+    padding: 8px;
+    font-size: 13px;
+}
+
+.container section.comments .comment .core .buttons span:first-of-type {
+    margin-right: 8px;
+    padding: 8px 0;
+    width: auto;
+}
+
+.container section.comments .comment .core .replies {
+    display: flex;
+    color: rgb(61, 165, 255);
+    height: 32px;
+    align-items: flex-start;
+}
+
+.container section.comments .comment .core .replies svg{
+    width: 20px;
+    height: 20px;
+    fill: #3ea6ff;
+}
+
+.container section.comments .comment .core .replies span {
+    margin-left: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.container .right-column {
+    height: 150px;
+    display: inline-block;
+    position: absolute;
+    padding: 24px 24px 0 0;
+}
+
+.container .right-column .video {
+    display: flex;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.container .right-column img {
+    width: 168px;
+    margin-right: 8px;
+}
+
+.video span {
+    position: absolute;
+    left: 125px;
+    bottom: 5px;
+    line-height: 10px;
+    font-size: 12px;
+    background-color: #000000b1;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.container .right-column .video .video-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 226px;
+}
+
+.container .right-column .video .video-desc h6 {
+    margin: 0;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+
+.container .right-column .video .video-desc p{
+    font-size: 13px;
+    color: #AAAAAA;
+    margin: 3px 0 0 0;
+}
+
